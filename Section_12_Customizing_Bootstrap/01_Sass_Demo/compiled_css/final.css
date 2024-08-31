@@ -1,0 +1,30 @@
+body {
+  background: hsl(0, 100%, 80%);
+}
+
+nav {
+  background: rgb(50, 50, 49);
+  font-size: 20px;
+}
+nav li {
+  background: green;
+}
+nav li a {
+  background: rgb(232, 216, 232);
+  font-size: 40px;
+}
+
+button {
+  padding: 15px;
+  background: red;
+  color: white;
+  font-size: 30px;
+  border: none;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=final.css.map */
