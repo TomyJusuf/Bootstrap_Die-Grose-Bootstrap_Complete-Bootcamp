@@ -1,0 +1,14 @@
+.famous-writers {
+  background: linear-gradient(
+      rgba(238, 238, 238, 0.809),
+      rgba(230, 230, 230, 0.7)
+    ),
+    url('../img/writers-bg.jpeg') fixed no-repeat center center / cover;
+
+  #book-1,
+  #book-2 {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+  }
+}

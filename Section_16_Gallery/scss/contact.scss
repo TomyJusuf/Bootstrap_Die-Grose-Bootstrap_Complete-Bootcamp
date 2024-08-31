@@ -1,0 +1,12 @@
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.908), rgba(0, 0, 0, 0.7)),
+    url('../img/header-bg.jpeg') fixed no-repeat center / cover;
+
+  .item-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.908), rgba(0, 0, 0, 0.7)),
+      url('../img/items-wrapper-bg.jpg') no-repeat center / cover;
+  }
+  .floating-item {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

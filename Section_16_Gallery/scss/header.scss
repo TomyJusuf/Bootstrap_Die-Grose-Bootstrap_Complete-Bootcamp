@@ -1,0 +1,27 @@
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url('../img/header-bg.jpeg') no-repeat fixed center / cover;
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+  .banner-header::first-letter {
+    font-family: 'Great Vibes', cursive;
+    font-size: 10rem;
+  }
+  .banner-header img {
+    animation: beating 3s infinite;
+  }
+}
+
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

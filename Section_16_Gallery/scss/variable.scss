@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+  --font-family-base: 'Great Vibes', cursive;
+}
+
+body {
+  overflow-x: hidden;
+}
+.font-vibes {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-style: normal;
+}

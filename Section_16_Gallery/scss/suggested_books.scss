@@ -1,0 +1,53 @@
+.suggested-books {
+  height: 100vh;
+  background: url('../img/wood-bg.jpeg') no-repeat center center / cover;
+
+  .books {
+    position: relative;
+    max-width: 430px;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .book {
+    background: red;
+    margin: 0 auto;
+    left: 35% !important;
+    top: 35% !important;
+    width: 55%;
+    position: absolute;
+    box-shadow: 5px 5px 15px #444;
+    border-right: 5px solid #777;
+    border-bottom: 10px solid #444;
+    transition: all 0.5s ease-in-out;
+  }
+  .book-1 {
+    top: 50px !important;
+    left: 50px !important;
+    transform: rotate(-40deg);
+  }
+  .book-2 {
+    top: 25px !important;
+    right: 50px !important;
+    transform: rotate(22deg);
+  }
+  .book-3 {
+    top: 185px !important;
+    left: 50px !important;
+    transform: rotate(15deg);
+  }
+  .book-4 {
+    top: 200px !important;
+    right: 20px !important;
+    transform: rotate(29deg);
+  }
+  .book-1:hover,
+  .book-2:hover,
+  .book-3:hover,
+  .book-4:hover {
+    transform: rotate(0);
+    z-index: 2;
+    scale: 1.7;
+    border-right: 10px solid #ddd;
+    border-bottom: 20px solid #bbb;
+  }
+}
