@@ -1,0 +1,90 @@
+.pricing {
+  overflow: hidden;
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+      url('../images/pricing-card-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .card-list-item {
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .price-card-button {
+    background-color: #fc7922;
+    width: 130px;
+    border-radius: 25px;
+    transition: all 0.2s;
+  }
+
+  .price-card-button:hover {
+    background-color: #ee833c;
+    transform: translateY(-5px);
+  }
+
+  .animationLeft {
+    animation: cardLeft;
+    opacity: 1;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .animationTop {
+    opacity: 1;
+    animation: cardMiddle;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+  .animationRight {
+    opacity: 1;
+    animation: cardRight;
+    animation-duration: 2.5s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes cardLeft {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes cardMiddle {
+    0% {
+      transform: translateY(800px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+@keyframes cardRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.gallery {
+  margin-top: 50px;
+  .underline-dark {
+    background: #70aed2;
+    width: 125px;
+    height: 3px;
+    margin: 0 auto;
+  }
+  .gallery-list-item {
+    cursor: pointer;
+  }
+
+  .filter {
+    max-width: 50%;
+  }
+  img {
+    width: 100%;
+    box-shadow: 10px 5px 15px #a9a8a8 !important;
+  }
+  .active-item {
+    color: #70aed2;
+  }
+  span {
+    top: -2px;
+
+    position: relative;
+  }
+}
+
+@media (max-width: 350px) {
+  .gallery {
+    h3 {
+      font-size: 7vw !important;
+    }
+  }
+}

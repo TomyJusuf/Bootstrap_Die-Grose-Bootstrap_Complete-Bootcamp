@@ -1,0 +1,42 @@
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.banner-heading {
+  animation: anim 2s ease-in-out;
+}
+
+.banner-par {
+  animation: anim 2s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 416px) {
+  .banner {
+    span {
+      font-size: 12vw !important;
+    }
+    .display-3 {
+      font-size: 15vw !important;
+    }
+    p {
+      font-size: 4vw !important;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.mission {
+  background: #151f20;
+  .underline {
+    max-width: 200px;
+    width: 100%;
+    height: 3px;
+    background: #70aed2;
+    margin: auto;
+  }
+
+  .fromLeft {
+    transform: translate(0px);
+    opacity: 1;
+    animation: anim-left 2s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .fromRight {
+    transform: translate(0px);
+    opacity: 1;
+    animation: anim-right 2s ease-in-out;
+    animation-delay: 0.9s;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes anim-left {
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes anim-right {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}
